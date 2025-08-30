@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: tballpad
+name: tballpad
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - tballpad_left
+  - tballpad_right

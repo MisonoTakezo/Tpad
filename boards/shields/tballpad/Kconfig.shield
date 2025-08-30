@@ -1,0 +1,4 @@
+config SHIELD_TBALLPAD_LEFT
+    def_bool $(shields_list_contains,tballpad_left)
+config SHIELD_TBALLPAD_RIGHT
+    def_bool $(shields_list_contains,tballpad_right)

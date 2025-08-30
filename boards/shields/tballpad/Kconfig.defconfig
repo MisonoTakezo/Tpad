@@ -1,0 +1,14 @@
+
+if SHIELD_TBALLPAD_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "tballpad"
+
+endif
+
+if SHIELD_TBALLPAD_LEFT || SHIELD_TBALLPAD_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

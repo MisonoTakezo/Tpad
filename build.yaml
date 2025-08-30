@@ -1,0 +1,12 @@
+
+include:
+  - board: akdk_bt1
+    shield: tballpad_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: akdk_bt1
+    shield: tballpad_right
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: akdk_bt1
+    shield: settings_reset
