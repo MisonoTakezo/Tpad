@@ -24,10 +24,10 @@
 
         layer_1 {
             bindings = <
-&trans      &trans          &kp UP_ARROW    &trans           &trans     &trans  &trans    &trans                &kp RS(RG(NUMBER_4))   &kp RS(RG(N5))
-&kp ESCAPE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(V)  &trans  &mkp MB2  &trans                &trans                 &trans
-&trans      &trans          &trans          &trans           &kp LA(Z)  &trans  &trans    &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp RS(RG(NUMBER_2))
-&none                                       &none            &none      &none   &none                                                  &none
+&trans      &trans          &kp UP_ARROW    &trans           &trans          &trans  &trans    &trans                &kp RS(RG(NUMBER_4))   &kp RS(RG(N5))
+&kp ESCAPE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(V)       &trans  &mkp MB2  &trans                &trans                 &trans
+&trans      &trans          &trans          &trans           &kp LA(Z)       &trans  &trans    &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp RS(RG(NUMBER_2))
+&none                                       &kp LANGUAGE_1   &kp LANGUAGE_2  &none   &none                                                  &none
             >;
         };
 
@@ -42,10 +42,10 @@
 
         layer_3 {
             bindings = <
-&trans        &trans        &trans        &trans        &kp SLASH  &kp BACKSLASH   &kp SEMI        &kp SQT     &kp MINUS         &kp EQUAL
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6    &kp N7          &kp N8      &kp N9            &kp N0
-&trans        &trans        &trans        &trans        &trans     &kp GRAVE       &kp COMMA       &kp PERIOD  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none                                     &none         &none      &kp LANGUAGE_2  &kp LANGUAGE_1                                &none
+&trans        &trans        &trans        &trans        &kp SLASH  &kp BACKSLASH  &kp SEMI   &kp SQT     &kp MINUS         &kp EQUAL
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6   &kp N7     &kp N8      &kp N9            &kp N0
+&trans        &trans        &trans        &trans        &trans     &kp GRAVE      &kp COMMA  &kp PERIOD  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none                                     &none         &none      &trans         &trans                                   &none
             >;
         };
 
