@@ -15,6 +15,6 @@ manifest:
       remote: sekigon-gonnoc
       revision: main
     - name: zmk-driver-iqs7211e
-      remote: takezo
+      remote: sekigon-gonnoc
   self:
     path: config
