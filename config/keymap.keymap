@@ -1,6 +1,13 @@
-
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+
+&mt {
+    flavor = "tap-preferred";
+    quick-tap-ms = <0>;
+    tapping-term-ms = <300>;
+};
 
 / {
     keymap {
@@ -8,38 +15,47 @@
 
         layer_0 {
             bindings =<
-                &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I     &kp O    &kp P
-                &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K     &kp L    &kp SEMI
-                &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT  &kp ENTER
+&mt LEFT_ALT Q    &kp W  &kp E  &kp R  &kp T     &kp Y              &kp U            &kp I  &kp O  &kp P
+&kp A             &kp S  &kp D  &kp F  &kp TAB   &mt RIGHT_SHIFT H  &mkp MB1         &kp K  &kp L  &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &lt 2 B   &lt 5 N            &kp M            &kp G  &kp J  &kp RETURN
 				&none &none &none &none &none &none
             >;
         };
 
         layer_1 {
             bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
+&trans       &trans           &kp UP_ARROW    &trans            &trans      &trans      &trans      &trans                 &kp RS(RG(NUMBER_4))   &kp RS(RG(N5))
+&kp ESCAPE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LA(V)  &trans      &mkp MB2   &trans                 &trans                  &trans
+&trans       &trans           &trans           &trans            &kp LA(Z)  &trans      &trans      &kp RG(LEFT_BRACKET)  &kp RG(RIGHT_BRACKET)  &kp RS(RG(NUMBER_2))
 				&none &none &none &none &none &none
             >;
         };
 
         layer_2 {
             bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
+&trans  &trans                   &kp LS(LG(UP_ARROW))    &trans                    &trans  &trans  &kp RA(RS(B))       &kp RA(UP_ARROW)  &kp RA(RS(C))        &trans
+&trans  &kp LS(LG(LEFT_ARROW))  &kp LS(LG(DOWN_ARROW))  &kp LS(LG(RIGHT_ARROW))  &trans  &trans  &kp RA(LEFT_ARROW)  &kp RA(RS(A))     &kp RA(RIGHT_ARROW)  &trans
+&trans  &trans                   &trans                   &trans                    &trans  &trans  &trans               &trans             &trans                &trans
 				&none &none &none &none &none &none
             >;
         };
 
         layer_3 {
             bindings =<
-                &none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
-				&none &none &none &none &none &none &none &none &none &none
+&trans         &trans         &trans         &trans         &kp SLASH  &kp BACKSLASH  &kp SEMI   &kp SQT     &kp MINUS         &kp EQUAL
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5     &kp NUMBER_6   &kp N7     &kp N8      &kp N9            &kp N0
+&trans         &trans         &trans         &trans         &trans      &kp GRAVE      &kp COMMA  &kp PERIOD  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 				&none &none &none &none &none &none
             >;
         };
+
+        layer_4 {
+            bindings =<
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans
+				&none &none &none &none &none &none
+            >;
+        };        
     };
 };

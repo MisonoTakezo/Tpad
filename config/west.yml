@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: sekigon-gonnoc
       url-base: https://github.com/sekigon-gonnoc
+    - name: takezo
+      url-base: https://github.com/MisonoTakezo
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -13,6 +15,6 @@ manifest:
       remote: sekigon-gonnoc
       revision: main
     - name: zmk-driver-iqs7211e
-      remote: sekigon-gonnoc
+      remote: takezo
   self:
     path: config
